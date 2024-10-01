@@ -12,18 +12,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
-    services:
-      kafka:
-        image: docker.io/apache/kafka:3.8.0@sha256:c89f315cff967322c5d2021434b32271393cb193aa7ec1d43e97341924e57069
-        ports:
-          - 9092:9092
-
-      influxdb:
-        image: docker.io/influxdb:1.8.10@sha256:63ac4c2fc4a32935e64005cad337b2179c5088a14e63ca2a39df32ca2896f035
-        ports:
-          - 8086:8086
-
     steps:
       - uses: actions/checkout@v4
 
