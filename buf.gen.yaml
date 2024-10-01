@@ -1,0 +1,15 @@
+version: v2
+
+clean: true
+
+managed:
+  enabled: true
+  override:
+    - file_option: java_package
+      value: ""
+
+plugins:
+  - remote: buf.build/protocolbuffers/java
+    out: java
+  - remote: buf.build/protocolbuffers/kotlin
+    out: kotlin

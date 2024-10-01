@@ -1,0 +1,15 @@
+services:
+
+  influxdb:
+    image: docker.io/influxdb:1.8.10@sha256:2d4846756ff07787af6cbb62c60d2b130734ed1ffaeab878daeea7fd8dc362d2
+    hostname: influxdb
+    container_name: influxdb
+    ports:
+      - "8086:8086"
+
+  kafka:
+    image: docker.io/apache/kafka:3.8.0@sha256:c89f315cff967322c5d2021434b32271393cb193aa7ec1d43e97341924e57069
+    container_name: kafka
+    hostname: kafka
+    ports:
+      - "9092:9092"
