@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package event.event_a.v1;
+
+import "address/v1/state.proto";
+
+option java_multiple_files = true;
+
+message EventA {
+  string foo = 1;
+  address.v1.State state = 2;
+}

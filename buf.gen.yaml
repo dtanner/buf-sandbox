@@ -11,7 +11,5 @@ managed:
 plugins:
   - remote: buf.build/protocolbuffers/java
     out: java
-    #include_imports: true
   - remote: buf.build/protocolbuffers/kotlin
     out: kotlin
-    #include_imports: true

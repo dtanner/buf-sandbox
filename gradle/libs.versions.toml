@@ -8,8 +8,8 @@ kotlin-core = "2.0.0"
 kotlin-coroutines = "1.9.0"
 mockk = "1.13.12"
 # Serialization fails with Exception in thread "main" java.lang.NoClassDefFoundError: com/google/protobuf/GeneratedMessageV3$ExtendableMessage error when using 4.x.x versions
-protobuf = "4.28.2"
-protovalidate = "0.4.0"
+protobuf = "4.28.3"
+protovalidate = "0.4.2"
 
 [libraries]
 janino = { module = "org.codehaus.janino:janino", version.ref = "janino" }
