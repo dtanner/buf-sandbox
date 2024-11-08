@@ -2,9 +2,13 @@
 version: v2
 modules:
   - path: src/main/proto
-    name: buf.build/dtanner/event-a
+    name: buf.build/dtanner/event-a-v1
     includes:
-      - src/main/proto/event/event_a
+      - src/main/proto/event/event_a/v1
+  - path: src/main/proto
+    name: buf.build/dtanner/event-a-v2
+    includes:
+      - src/main/proto/event/event_a/v2
   - path: src/main/proto
     name: buf.build/dtanner/event-b
     includes:
