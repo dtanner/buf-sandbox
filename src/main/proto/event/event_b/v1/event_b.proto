@@ -2,8 +2,11 @@ syntax = "proto3";
 
 package event.event_b.v1;
 
+import "address/v1/state.proto";
+
 option java_multiple_files = true;
 
 message EventB {
   string some_field = 1;
+  address.v1.State state = 2;
 }
