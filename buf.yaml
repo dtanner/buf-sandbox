@@ -10,13 +10,13 @@ modules:
     includes:
       - src/main/proto/event/event_a/v2
   - path: src/main/proto
-    name: buf.build/dtanner/event-b
+    name: buf.build/dtanner/event-b-v1
     includes:
-      - src/main/proto/event/event_b
+      - src/main/proto/event/event_b/v1
   - path: src/main/proto
-    name: buf.build/dtanner/address
+    name: buf.build/dtanner/address-v1
     includes:
-      - src/main/proto/address
+      - src/main/proto/address/v2
 
 deps:
   - buf.build/bufbuild/protovalidate
