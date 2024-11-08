@@ -2,15 +2,15 @@
 version: v2
 modules:
   - path: src/main/proto
-    name: buf.build/dtanner/sandbox
+    name: buf.build/dtanner/event-a
     includes:
       - src/main/proto/event/event_a
   - path: src/main/proto
-    name: buf.build/dtanner/sandbox
+    name: buf.build/dtanner/event-b
     includes:
       - src/main/proto/event/event_b
   - path: src/main/proto
-    name: buf.build/dtanner/sandbox
+    name: buf.build/dtanner/address
     includes:
       - src/main/proto/address
 
